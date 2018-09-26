@@ -39,3 +39,8 @@ variable "vswitch_id" {
   description = "VSwitch ID."
   default     = ""
 }
+
+variable "vpc_id" {
+  description = "VPC ID."
+  default     = ""
+}

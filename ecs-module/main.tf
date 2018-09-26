@@ -28,7 +28,8 @@ resource "alicloud_eip_association" "default" {
 resource "alicloud_security_group" "sg" {
   name        = "default"
   provider    = "alicloud"
-  vpc_id = "${alicloud_vpc.vpc.id}"
+  # vpc_id = "${alicloud_vpc.vpc.id}"
+  vpc_id = "${var.vpc_id}"
   description = "default"
 }
 
