@@ -21,7 +21,7 @@ data "alicloud_zones" "default" {
 
 resource "alicloud_eip_association" "default" {
   allocation_id = "${alicloud_eip.default.id}"
-  instance_id = "${alicloud_instance.paas.id}"
+  instance_id = "${alicloud_instance.paas.0.id}"
 }
 
 # Create security group
