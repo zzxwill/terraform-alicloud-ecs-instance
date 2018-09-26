@@ -54,7 +54,8 @@ resource "alicloud_instance" "paas" {
   system_disk_size     = "${var.system_size}"
   security_groups      = ["${alicloud_security_group.sg.id}"]
   instance_name        = "paas"
-  vswitch_id = "${alicloud_vswitch.vsw.id}"
+  # vswitch_id = "${alicloud_vswitch.vsw.id}"
+  vswitch_id = "${var.vswitch_id}"
   count = "${var.instance_count}"
   password = "${var.instance_password}"
 

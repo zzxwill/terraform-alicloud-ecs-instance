@@ -34,3 +34,8 @@ variable "memory_size" {
   description = "Memory size used to fetch instance types."
   default     = 2
 }
+
+variable "vswitch_id" {
+  description = "VSwitch ID."
+  default     = ""
+}
