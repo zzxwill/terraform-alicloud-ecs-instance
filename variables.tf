@@ -1,12 +1,4 @@
 # ECS
-variable "cidr_block_vpc" {
-  default = "10.0.0.0/12"
-}
-
-variable "cidr_block_vswitch" {
-  default = "10.0.0.0/16"
-}
-
 variable "instance_count" {
   default = "1"
 }
@@ -37,10 +29,10 @@ variable "memory_size" {
 
 variable "vswitch_id" {
   description = "VSwitch ID."
-  default     = "vsw-2zejgd6bn6a4pzffdipj3"
+  default     = ""
 }
 
 variable "vpc_id" {
   description = "VPC ID."
-  default     = "vpc-2ze2ic1xgpkwad0catxtt"
+  default     = ""
 }
